@@ -1,0 +1,478 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi" lang="vi">
+
+<head>
+	<title>Our Love</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="shortcut icon" href="favicon.ico" >
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('times.ttf') format("truetype");
+		}
+	</style>
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two:700&v2' rel='stylesheet' type='text/css'>
+	<link href="css/default_dev.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/curtain.css">
+	<link rel="stylesheet" href="css/endcover.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
+</head>
+
+<body>
+
+<div class="loading" id="onlo">
+	<span>Chờ tí nha con trai, đang load :v...</span>
+</div>
+
+<ul class="menu">
+    <li><button href="#up">∧</button></li>
+    <li><button href="#down">∨</button></li>
+</ul>
+
+<ul id="curtain-links-menu">
+    <li><a href="#lovetime" class="curtain-links">Love Time</a></li>
+    <li><a href="#lovebg" class="curtain-links">Love BG</a></li>
+    <li><a href="#loveletter" class="curtain-links">Love Letter</a></li>
+    <li><a href="#lovecover" class="curtain-links">Love Cover</a></li>
+</ul>
+
+
+	
+<ol class="curtains">
+    <li id="lovetime" class="cover">
+        <article>
+		<canvas id="myCanvas" width="700" height="700"></canvas>
+            <div id="time" style="display:none;">
+			<h1>Glim & Mây Mèo </h1>
+			<div id="elapseClock"></div>
+			<div id="arrow" style="text-align:center;margin-top:100px;display:none;"><img src="images/jianpan.gif" /></div>
+			</div>
+			
+        </article>
+    </li>
+	
+	<!-- <li id="lovebg" class="cover">
+		<div class="cover-wrapper">
+			<img src="images/colors.jpg"/>
+			<span>Hội những thanh niên có gấu</span>
+		</div>
+    </li> -->
+
+	<!-- way to nanjing -->
+	<li id="way2nj" class="way">
+		<div id="intro"><img src="images/nj.jpg" class="first"></div>
+		<div id="story">
+			<div class="row1 col5">
+				<h1 class="size3" style="color:#333;">Anh & Em</h1>
+				<h2>KeyWords:</h2>
+				<blockquote class="width8 ">
+					<p><strong>DAY1</strong><strong>Kỉ niệm</strong></p>
+					<p><strong>DAY2</strong><strong>Kỉ niệm</strong></p>
+
+					<p>…………	</p>		
+				</blockquote>
+			</div>
+		</div>
+	</li>
+		
+			
+		<!-- way to TJ-->	
+		<li class="way" id="way2tj">
+			<div id="intro"><img src="images/tj.jpg" class="first"></div>
+			<div id="story">
+				<div class="row1 col1">
+				<h1 class="size3">Những điểm giống nhau</h1>
+				<h2>KeyWords</h2>
+				<blockquote class="width4 ">
+				<p>Yêu em bằng con trym chứ không phải trái tim </p>
+				<p>Buồn vui giận hờn</p>
+				</blockquote>
+				</div>
+			</div>
+		</li>
+		
+		<!-- way to CD-->
+		<li class="way" id="way2cd">	
+			<div id="intro"><img src="images/cd.jpg" class="first"></div>
+			<div id="story">
+				<div class="row1 col5">
+					<h1 class="size3">Du hí</h1>
+					<h2>KeyWords:</h2>
+					<blockquote class="width8 ">
+						<p><strong>DAY 1:</strong> Đi đâu ,làm gì nhà nghỉ mấy tiếng??</p>
+						<p><strong>DAY 2:</strong> Ghi hết zô đây:3</p>
+						<p><strong>DAY 1:</strong>Your Text Here</p>
+						
+
+					</blockquote>
+				</div>
+			</div>
+		</li>
+		
+		<!-- way to CQ-->
+		<li class="way" id="way2cq">
+			<div id="intro"><img src="images/cq.jpg" class="first"></div>
+			<div id="story">
+				<div class="row1 col5">
+					<h1 class="size3">Kỉ niệm</h1>
+					<h2>KeyWords:</h2>
+					<blockquote class="width8 ">
+						<p><strong>DAY 5:</strong>Phiêu lưu những đâu</p>
+						<p><strong>DAY 6:</strong> Hùa cùng nhau</p>
+						<p><strong>DAY 7:</strong> next day...</p>
+					</blockquote>
+				</div>
+			</div>
+		</li>
+		
+		<!-- way to SHIDU-->
+		<li class="way" id="way2sd">
+			<div id="intro"><img src="images/sd.jpg" class="first"></div>
+			<div id="story">
+				<div class="row1 col1">
+					<h1 class="size3">ABCXYZ</h1>
+					<h2>KeyWords:</h2>
+					<blockquote class="width5 ">
+						<p>Your Text Here</p>
+					</blockquote>
+				</div>
+			</div>
+		</li>
+		<!-- end way to shidu-->
+		
+		<!-- way to zhimaowan-->
+		<li class="way" id="way2zmw">
+			<div id="intro"><img src="images/zmw.jpg" class="first"></div>
+			<div id="story">
+				<div class="row1 col1">
+					<h1 class="size3">Tiêu đề</h1>
+					<h2>KeyWords:</h2>
+					<blockquote class="width5 ">
+						<p>Day1: Your Text Here</p>
+					</blockquote>
+				</div>
+			</div>
+		</li>
+	
+	<!-- way to smile-->
+		<li class="way" id="smiles">
+			<h1 class="title">Món quà tốt nhất~</h1>
+			<section class="pe-container">
+			<!-- Tất cả các ảnh xuất hiện dưới đây phải để trong thư mục thumbs -->
+				<ul id="pe-thumbs" class="pe-thumbs">
+					<li><a href="#"><img src="images/thumbs/1.jpg" /><div class="pe-description"><h3>Quarrel</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/2.jpg" /><div class="pe-description"><h3>Travel</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/3.jpg" /><div class="pe-description"><h3>The Moment</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/4.jpg" /><div class="pe-description"><h3>Water</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/5.jpg" /><div class="pe-description"><h3>Crazys</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/6.jpg" /><div class="pe-description"><h3>Sea</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/7.jpg" /><div class="pe-description"><h3>Snack</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/8.jpg" /><div class="pe-description"><h3>Ship</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/9.jpg" /><div class="pe-description"><h3>Love is always young</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/10.jpg" /><div class="pe-description"><h3>Because of you</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/11.jpg" /><div class="pe-description"><h3>Smile </h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/12.jpg" /><div class="pe-description"><h3>Smile</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/13.jpg" /><div class="pe-description"><h3>Memories</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/14.jpg" /><div class="pe-description"><h3>Happiness</h3><p>Tiêu đề ảnh is LOVE ...</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/15.jpg" /><div class="pe-description"><h3>Miracle</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/16.jpg" /><div class="pe-description"><h3>Jump</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/17.jpg" /><div class="pe-description"><h3>The air to breathe</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/18.jpg" /><div class="pe-description"><h3>Shy</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/19.jpg" /><div class="pe-description"><h3>See What</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/20.jpg" /><div class="pe-description"><h3>Happy</h3><p>Tiêu đề ảnh </p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/21.jpg" /><div class="pe-description"><h3>Belong Together</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/22.jpg" /><div class="pe-description"><h3>Considerate</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/23.jpg" /><div class="pe-description"><h3>Look</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/24.jpg" /><div class="pe-description"><h3>Traveling Alone</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/25.jpg" /><div class="pe-description"><h3>Couple face</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/26.jpg" /><div class="pe-description"><h3>Thankful</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/27.jpg" /><div class="pe-description"><h3>Lover</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/28.jpg" /><div class="pe-description"><h3>New Year</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/29.jpg" /><div class="pe-description"><h3>Sunshine</h3><p>A Kiss...</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/30.jpg" /><div class="pe-description"><h3>My Life</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/31.jpg" /><div class="pe-description"><h3>Winter</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/32.jpg" /><div class="pe-description"><h3>My bag Your Smile</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/33.jpg" /><div class="pe-description"><h3>July 20, 2011</h3><p>Tiêu đề ảnh...</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/34.jpg" /><div class="pe-description"><h3>KTV</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/35.jpg" /><div class="pe-description"><h3>Kiss</h3><p>Tiêu đề ảnh</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/36.jpg" /><div class="pe-description"><h3>Forever</h3><p>Tiêu đề ảnh</p></div></a></li>
+				</ul>
+			</section>
+		</li>
+    <!-- Thư tình - Tâm Thư -->
+	<li id="loveletter">
+        <div class="fixed">
+            <h1>Love Letter</h1>
+			<p>Thế giới có quá nhiều người. Nhưng em là thế giới của riêng anh ~</p>
+        </div>
+        <div class="content-wrapper">
+			<ul class="steplist">
+			<li class="step">
+            <h1>Dear GYS:</h1>
+			<p>Bây giờ là ngày 08 tháng 5 năm 2	012 22:34, tôi quyết định bắt đầu viết một bức thư tình, viết một chút mỗi ngày, và sau đó đặt nó với bạn như một món quà lưu niệm kỷ niệm đầu tiên của chúng tôi với nhau trong một món quà - mà bạn nhìn thấy, tôi rất bắt đầu sớm để chuẩn bị, nó không phải là nó nên thưởng cho một nụ hôn lớn?</p>
+			<p>Vâng, cả hai chúng tôi cùng nhau trong một năm! Tôi muốn ôm em quay 360 °, nhưng vẫn quên, bạn ôm em tắt nó là như nhau! ~ Tháng bắt đầu, bởi vì bạn luôn nói quá nhiều kinh nghiệm với nhau, để cùng nhau để có nhiều hơn thời gian thực tế. Nếu bây giờ chúng ta nhớ lại một ngày trong Wangfujing chạy trốn ngày một năm trước, thực sự là một loại cảm giác warp.</p>
+			<p>Rất nhiều người nói, không có tình yêu vĩnh cửu, sự phát triển cuối cùng, đã trở thành gia đình. Thậm chí không đầu của tình yêu, sống một thời gian dài và họ cũng có thể có một gia đình. Vì vậy, những người này cho chúng tôi biết, điểm khởi đầu là không quan trọng, bởi vì cuối cùng là như nhau. Nhưng tôi khẳng định rằng không phải như vậy, bởi vì tôi yêu em, bởi vì tôi nghĩ rằng hạnh phúc là từ trái tim để đáp ứng, vì vậy tôi có lý do để tin rằng chúng tôi sẽ được hạnh phúc ~</p>
+			<p>Ah. Đối với một số người đã không nói với bạn điều của nó, có thể một số điều tôi sẽ luôn nhớ, một số điều dần dần trở thành một thói quen. Nhưng khi họ đã xảy ra, tôi thực sự rất cảm động và biết ơn cho thời điểm này.</p>
+			<p>Cuối cùng, để 51 Shidu, lúng túng. Tôi thật sự không muốn đề cập đến nó lên khỏi mặt nước, đó là một sự xấu hổ có gỗ. . . Cũng phải đối mặt với nó, giật gân về nó lên khỏi mặt nước. Sau khi thực hiện tất cả các loại bản năng, đứng vụng về trong sự nông cạn tìm kiếm cái bóng của mình, và bắt đầu suy nghĩ về một chiếc thuyền có thể đưa tôi đến thuyết phục khác xuống. Sau đó, bạn đã thấy, trong khi la hét vào tôi chờ đợi cho bạn, sử dụng mái chèo trong khi vẫn nỗ lực đấu tranh chống lại hiện tại, nhưng bạn vẫn cùng nhau, thuyền bị cuốn trôi ...... Tôi nhìn xuống để xem riêng của họ: blah ướt quần, bạn có thể ép nước từ áo sơ mi, là sự hiểu biết người không muốn trong lạnh mùa xuân lạnh này, hãy Phật một chiếc thuyền ướt và khô như thế trong quyền riêng của họ. Bên cạnh đó, tôi rơi xuống nước ở giữa các ghềnh, ngay cả khi xác định phải dừng lại và đưa tôi lên, không phải là dễ dàng. Tôi nhìn xung quanh, bao quanh bởi vùng nước nông, trong khi đất là gai góc: đó là bàn chân của họ tất cả các loại cỏ khô, nước chỉ đơn giản là không sâu, nó chạm có thể nhỏ giọt sang phía bên kia, đi đường sỏi tương đối nhẹ nhàng được gặp các bạn và hạ lưu .</p>
+			</li>
+			<li class="step">
+			<div class="width50"><img class="pie-img aligncenter" src="http://lh4.ggpht.com/-naKrzexmJ4I/T6yzKckilbI/AAAAAAAAAd4/VCyWAn2sYBQ/DSC09435_%2525E5%252589%2525AF%2525E6%25259C%2525AC.jpg?imgmax=512"/>
+			</div>
+			<div class="width50">
+			<p>Sau đó nhìn lên, bạn đã đưa thuyền dừng lại ở bờ nỗ lực hạ lưu đến gặp tôi. Ông không quên vẫy tay không mang dép đi trong nhà, vì vậy tôi đang chờ đợi bạn - vì vậy, lúc đó, tôi cuối cùng đã dừng lại để nghĩ cách quay vòng của riêng mình, chỉ biết, chờ đợi cho bạn, chỉ cần tốt. Đó là khá buồn cười, tràn đầy như thế nào cạn nước trên ba mặt từ phía sau với đất, để nhìn thấy bạn, thực sự đã bắt đầu làm điều sai trái. Giữ ngón tay thon thả của mình, ông bắt đầu phàn nàn về gió mùa xuân lạnh như thế nào, các nước đã lạnh như thế nào, có bao nhiêu tàu thuyền sẽ được trên con đường dẫn tới sự nông cạn của cỏ khô và nhỏ côn trùng ...... cũng tìm thấy bàn tay và ly Xuepao của tôi mất ......</p>
+			</div>
+			<div style="clear:both;"></div>
+			<p>Ồ, bạn biết không? Trong thực tế, khi trái tim tôi là bao giờ thoải mái ...... Tôi luôn luôn nói rằng họ là cô gái hơi không an toàn hơn, và lúc đó, bạn trông giống như mỗi hoàng tử trái tim như Cô bé Lọ Lem, vượt qua mọi trở ngại đến, đáp ứng tất cả cảm giác của tôi về an ninh. Haha, ông Du ~ I love you phạm vi này người đàn ông tinh khiết của con trẻ, với vai đủ rộng của bạn, tựa lên bởi paradise bên cạnh tôi ~ ~</p>
+			</li>
+			<li class="step">
+			<p style="text-align: center;">
+			<img class="pie-img aligncenter" src="http://lh3.ggpht.com/-yiMQiABYlXA/T6yzISb1qgI/AAAAAAAAAd4/9hwXBH02wDI/wKgBt0-O4bbGU4BoAAMg9DP0tN065.groupinfo.w600._%2525E5%252589%2525AF%2525E6%25259C%2525AC.jpg?imgmax=512"/>
+			</p>
+			<p>Ở Thành Đô, ngoài cha mẹ chưa bao giờ nghĩ ai sẽ thức dậy lúc nửa đêm để mua thuốc ...... Tôi nói rằng nếu bạn thích một người đàn ông, để đi du lịch với anh ta. Trong một môi trường lạ có khả năng nhất để tiết lộ một bản chất con người, và bạn, như mọi khi, nhẹ nhàng và ân cần. Hey, cung cấp cho bạn một giải thưởng được trao trong trường hợp bạn điều này nhiều bạn bật hơn và đi ngủ ......</p>
+
+			</li>
+			
+			<li class="step">
+			<p style="text-align: center;"><img class="pie-img aligncenter" src="http://lh6.ggpht.com/-XZMUs9ohQBE/T6y0rjezEHI/AAAAAAAAAeY/dc8N8c33F0A/DSC0932.jpg?imgmax=512"/></p>
+			<p>Mùa đông đón tôi từ mẹ làm việc, cô và tôi nên chỉ cần ra khỏi đền thờ Great Bell, cơ thể ấm áp, bạn vẫn mở máy sưởi 3 tốc độ, cho biết mẹ mình đến từ bên ngoài, sẽ bị lạnh.</p>
+			</li>
+			<li class="step">
+			<p style="text-align: center;"><img class="pie-img aligncenter" src="http://lh3.ggpht.com/-yH_fKJrDjj4/T4WkZUWMFTI/AAAAAAAAAaU/TUbCWCV8Az4/DSC091032.jpg?imgmax=512"/></p>
+			<p>Mặc dù bây giờ tôi đang sử dụng để xem bạn đặt một cơ thể có thể dỡ bỏ các túi được bốc dỡ ném bạn gặp rắc rối, nhưng vẫn còn nhớ khi bắt đầu đông đúc đường tàu điện ngầm 5, bạn nắm lấy màu hồng của tôi túi máy tính, một vũ khí hách kéo tôi phải nói, người phụ nữ trẻ kết hôn để giúp tôi có được mọi thứ theo cách họ cần.</p>
+			</li>
+			<li class="step">
+			<p style="text-align: center;"><img class="pie-img" src="http://lh4.ggpht.com/-1MyK7YYxPsI/T7nanvU8dbI/AAAAAAAAAhM/vAAId7meCj0/1336282316458.jpg?imgmax=512" /></p>
+			<p>Mọi người đều nói rằng bỏ hút thuốc là một điều rất khó khăn, nhưng bạn nhường đường cho tôi một lần nữa và một lần nữa: từ cắt xuống, tôi không hút thuốc trước một ngày năm, ba ngày, một ngày hoặc hai ngày một ...... một ba ngày một năm ngày một ...... cho đến bây giờ không hút một ......</p>
+			</li>
+			<li class="step">
+			<p style="text-align: center;"><img class="pie-img" src="http://lh6.ggpht.com/-mle7AjHe8Zk/T7m4TXMradI/AAAAAAAAAg8/n9x7D083U3k/ca_202322.jpg?imgmax=512"/></p>
+			<p>Năm mươi mốt ba ngày, tôi giới thiệu bạn với chị em thân yêu nhất của tôi, sống xuống, chúng tôi Doukua bạn bay một cách cẩn thận. Bạn nên dễ dàng chiếm được trái tim và khối óc, bây giờ, bạn bè của bạn, bạn của tôi, cũng như người bạn chung của chúng tôi chào hỏi, sau một cuộc chiến, bạn có chắc chắn giúp đỡ, tôi phải ah? ! T-T ~~~~</p>
+			<p>Đêm nằm trên cãi nhau chủ đề. Tôi muốn làm cho các nỗ lực, nhưng không thể nhớ làm thế nào tức giận bạn nhìn ...... Trong thực tế, đôi khi rất sợ, sợ bạn luôn cho tôi, và sau đó một ngày nào đó nó nổ ra, làm tôi sợ</p>
+			</li>
+			<li class="step">
+			<p style="text-align: center;"><img class="pie-img" src="http://lh5.ggpht.com/-Z6jyAYHhF08/T7pcvV65iWI/AAAAAAAAAiI/NCp9hvKfF6E/DSC034982.JPG?imgmax=512" /></p>
+			<p>Tầng trên là Su Xiaojie chụp ảnh, chúng ta nên phổ biến nhất trông giống như: cánh tay của bạn xung quanh cổ của tôi quá, đi bừa bãi Zhang Yang. Những gì tôi nói nhảy múa, cười không liên quan ---- Đây là cách yêu thích của tôi -</p>
+			</li>
+			<li class="step">
+			<p style="text-align: center;"><img class="pie-img aligncenter" src="http://lh3.ggpht.com/-9WrWXAHctIM/T6y0O4fTuwI/AAAAAAAAAeY/5YPmDcNT0HY/T2f4WkXo8aXXXXXXXX_%252521%25252172282551.jpg?imgmax=512"/></p>
+			<p>Tôi thích nhanh chóng của một sô cô la hai kéo trong túi của bạn, kèm theo Star Light chiếu sáng như những ngôi sao nhỏ để trò chuyện với bạn, không có vấn đề bao nhiêu mưa và nhiều hơn như một chiếc ô tắm nhỏ không làm ướt chiếc váy của tôi, như bạn chủ động để có những sáng kiến để mua một chiếc nhẫn, cho biết chiếc nhẫn chữ và tùy tiện quyết định đặt nó trên ngón đeo nhẫn, mà thực sự làm cho tôi cảm thấy hạnh phúc và ngọt ngào ......</p>
+			</li>
+			<li class="step">
+			<p>……</p>
+			<p>Giống như hầu hết bắt đầu nói, có lẽ một cái gì đó chúng tôi sẽ luôn luôn nhớ, những người khác chậm biến thành một vấn đề của khóa học. Nhưng khi chúng xảy ra, tôi cảm thấy thật ngọt ngào. Ghi lại, do đó hương vị của những ký ức ấm áp - thân yêu của tôi, chúng ta phải con đường rất dài, khi tình yêu trở thành tình cảm dần dần, từng chút một những ngọt ngào, sau sự đổ vỡ trong giai đoạn là cơ sở để đưa vào. Tất nhiên, bạn chủ yếu phải phù hợp với tôi ......</p>
+
+            </li>
+			</ul>
+        </div>
+    </li>
+    <!-- Kết thúc thư tình -->
+    <li id="lovecover">
+		<!-- Ảnh nền và video -->
+		<ul class="steplist">
+			<li class="step" id="step1"></li>
+			<li class="step" id="step2"></li>
+			<li class="step say">
+					<h1>Dành cho em <3</h1>
+					<p>Em nói rằng thật khó mà tạo ấn tượng tốt với em<br/>Tạo ấn tượng với bạn? Không nên vội vã cho tôi một cốc chanh hối lộ tôi</p>
+					<p>Hey, cảm thấy tốt hạnh phúc Ồ, tôi có một tình yêu tuyệt vời</p>
+					<H1> Chào em</h1> <p> Chúc mừng sinh nhật!<br/>
+					<h3 class="videoLink">Here is A Video</h3>
+			</li>
+			<li class="step" id="step4"></li>
+		</ul>
+		<!-- Add background tại đây. Lưu ý cần phải bỏ những chi tiết thừa chỉ trừa lại đối tượng -->
+			<img src="images/smile.png" height="100%" id="seventhImg" class="full-background">
+			
+		<!--Add Video ở đây -->
+		<div class="videoCurtain">&nbsp;</div>
+		<video controls class="videoLarge" preload="auto">
+			<source src="http://vid1158.photobucket.com/albums/p605/dylan_li/video.mp4" type="video/mp4">
+		</video>
+		<!--end of video -->
+    </li>
+
+</ol>
+<!-- Nhạc nền các bạn add tại đây -->
+<audio src="music/123.mp3" autoplay="autoplay" loop="3" /> 
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/curtain.js"></script>
+<script>
+    $(function(){
+       $('.curtains').curtain({
+           scrollSpeed: 450,
+           controls: '.menu',
+           curtainLinks: '.curtain-links'
+       });
+    });
+</script>
+<script type="text/javascript" src="js/jquery.proximity.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				var Photo	= (function() {
+					
+						// list of thumbs
+					var $list		= $('#pe-thumbs'),
+						// list's width and offset left.
+						// this will be used to know the position of the description container
+						listW		= $list.width(),
+						listL		= $list.offset().left,
+						// the images
+						$elems		= $list.find('img'),
+						// the description containers
+						$descrp		= $list.find('div.pe-description'),
+						// maxScale : maximum scale value the image will have
+						// minOpacity / maxOpacity : minimum (set in the CSS) and maximum values for the image's opacity
+						settings	= {
+							maxScale	: 1.3,
+							maxOpacity	: 0.9,
+							minOpacity	: Number( $elems.css('opacity') )
+						},
+						init		= function() {
+							
+							// minScale will be set in the CSS
+							settings.minScale = _getScaleVal() || 1;
+							// preload the images (thumbs)
+							_loadImages( function() {
+								
+								_calcDescrp();
+								_initEvents();
+							
+							});
+						
+						},
+						// Get Value of CSS Scale through JavaScript:
+						// http://css-tricks.com/get-value-of-css-rotation-through-javascript/
+						_getScaleVal= function() {
+						
+							var st = window.getComputedStyle($elems.get(0), null),
+								tr = st.getPropertyValue("-webkit-transform") ||
+									 st.getPropertyValue("-moz-transform") ||
+									 st.getPropertyValue("-ms-transform") ||
+									 st.getPropertyValue("-o-transform") ||
+									 st.getPropertyValue("transform") ||
+									 "fail...";
+
+							if( tr !== 'none' ) {	 
+
+								var values = tr.split('(')[1].split(')')[0].split(','),
+									a = values[0],
+									b = values[1],
+									c = values[2],
+									d = values[3];
+
+								return Math.sqrt( a * a + b * b );
+							
+							}
+							
+						},
+						// calculates the style values for the description containers,
+						// based on the settings variable
+						_calcDescrp	= function() {
+							
+							$descrp.each( function(i) {
+							
+								var $el		= $(this),
+									$img	= $el.prev(),
+									img_w	= $img.width(),
+									img_h	= $img.height(),
+									img_n_w	= settings.maxScale * img_w,
+									img_n_h	= settings.maxScale * img_h,
+									space_t = ( img_n_h - img_h ) / 2,
+									space_l = ( img_n_w - img_w ) / 2;
+								
+								$el.data( 'space_l', space_l ).css({
+									height	: settings.maxScale * $el.height(),
+									top		: -space_t,
+									left	: img_n_w - space_l
+								});
+							
+							});
+						
+						},
+						_initEvents	= function() {
+						
+							$elems.on('proximity.Photo', { max: 80, throttle: 10, fireOutOfBounds : true }, function(event, proximity, distance) {
+								
+								var $el			= $(this),
+									$li			= $el.closest('li'),
+									$desc		= $el.next(),
+									scaleVal	= proximity * ( settings.maxScale - settings.minScale ) + settings.minScale,
+									scaleExp	= 'scale(' + scaleVal + ')';
+								
+								// change the z-index of the element once it reaches the maximum scale value
+								// also, show the description container
+								if( scaleVal === settings.maxScale ) {
+									
+									$li.css( 'z-index', 1000 );
+									
+									if( $desc.offset().left + $desc.width() > listL + listW ) {
+										
+										$desc.css( 'left', -$desc.width() - $desc.data( 'space_l' ) );
+									
+									}
+									
+									$desc.fadeIn( 800 );
+									
+								}	
+								else {
+									
+									$li.css( 'z-index', 1 );
+								
+									$desc.stop(true,true).hide();
+								
+								}	
+								
+								$el.css({
+									'-webkit-transform'	: scaleExp,
+									'-moz-transform'	: scaleExp,
+									'-o-transform'		: scaleExp,
+									'-ms-transform'		: scaleExp,
+									'transform'			: scaleExp,
+									'opacity'			: ( proximity * ( settings.maxOpacity - settings.minOpacity ) + settings.minOpacity )
+								});
+
+							});
+						
+						},
+						_loadImages	= function( callback ) {
+							
+							var loaded 	= 0,
+								total	= $elems.length;
+							
+							$elems.each( function(i) {
+								
+								var $el = $(this);
+								
+								$('<img/>').load( function() {
+									
+									++loaded;
+									if( loaded === total )
+										callback.call();
+									
+								}).attr( 'src', $el.attr('src') );
+							
+							});
+						
+						};
+					
+					return {
+						init	: init
+					};
+				
+				})();
+				
+				Photo.init();
+				
+			});
+		</script>
+	
+
+<script type="text/javascript" src="js/lovetime.js"></script>
+<script type="text/javascript" src="js/heart.js"></script>
+<script type="text/javascript" src="js/my.js"></script>
+</body>
+</html>
