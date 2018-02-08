@@ -1,11 +1,43 @@
 ﻿	function timeElapse(date){
+		// // Set the unit values in milliseconds.  
+		// var msecPerMinute = 1000 * 60;  
+		// var msecPerHour = msecPerMinute * 60;  
+		// var msecPerDay = msecPerHour * 24; 
+
+		// // Set a date and get the milliseconds  
+		// var date = new Date('12/26/2017');  
+		// var dateMsec = date.getTime();  
+
+		// // Set the date to January 1, at midnight, of the specified year.  
+		// date.setMonth(12);  
+		// date.setDate(26);
+		// date.setFullYear(2017);  
+		// date.setHours(0, 0, 0, 0); 
+
+		// // Get the difference in milliseconds.  
+		// var interval = dateMsec - date.getTime();  
+
+		// // Calculate how many days the interval contains. Subtract that  
+		// // many days from the interval to determine the remainder.  
+		// var days = Math.floor(interval / msecPerDay );  
+		// interval = interval - (days * msecPerDay );  
+
+		// // Calculate the hours, minutes, and seconds.  
+		// var hours = Math.floor(interval / msecPerHour );  
+		// interval = interval - (hours * msecPerHour );  
+
+		// var minutes = Math.floor(interval / msecPerMinute );  
+		// interval = interval - (minutes * msecPerMinute );  
+
+		// var seconds = Math.floor(interval / 1000 ); 
+
 	var current = new Date();
 	var dd = current.getDate();
 	var mm = current.getMonth()+1;
 	var yyyy = current.getFullYear();
 	current.setFullYear(yyyy,mm,dd);
 	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
-	var days = Math.floor(seconds / (3600 * 24));
+	var days = Math.floor(seconds / (3600 * 24)) + 3;
 	seconds = seconds % (3600 * 24);
 	var hours = Math.floor(seconds / 3600);
 	if (hours < 10) {
